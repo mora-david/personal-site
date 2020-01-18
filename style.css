@@ -1,0 +1,314 @@
+body{
+    background:#275842;
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+}
+
+/*CSS para la navegación*/
+
+.header-color{
+    background:#014624;
+}
+
+.navmain {
+    color:white;
+    font-size: 1.1rem;
+    display:flex;
+    justify-content:space-between;
+    padding:30px;
+}
+
+.divnav{
+    display:inline;
+}
+
+.navlist{
+    visibility: hidden;
+    position: relative;
+    right:500px;
+    opacity:0;
+    transition:transform 0.8s, visibility 0s, opacity 0.5s linear;
+ 
+}
+
+.is-active{
+    visibility: visible;
+    transform: translate(330px, 30px);
+    display:block;
+opacity: 1;
+  z-index: 1;
+  width:100 px;
+}
+
+
+
+.navlist li {
+    display: block;
+    padding: 10px;
+}
+
+.navlist li:hover {
+    color:orange
+}
+
+
+.navbutton {
+    display:none;
+    padding:20px;
+    border: 1px solid red;
+    position:absolute;
+    top:40px;
+    right:20px;
+    transition: all 0.3s ease-in;
+}
+
+.navbutton:hover {
+    background:red;
+    border: 2px solid red;
+}
+
+.hamb{
+    font-size:2rem;
+    position: absolute;
+    right:50px;
+}
+
+@media (min-width: 768px) { 
+
+    .hamb{
+        display:none
+    }
+
+    .navlist{
+        display:inline;
+        position: static;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .navlist li{
+        display: inline
+    }
+
+    .navbutton {
+        position:static
+    }
+ }
+
+ /*LEFT BAR*/
+
+ .left-bar{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ .left-bar li{
+     padding:5px;
+     font-size:2.5rem;
+     list-style: none;
+     transition:transform 0.5s, linear;
+ }
+
+ .left-bar li:hover{
+    color:#b17302;
+    transform: translate(0px, -5px)
+ }
+
+ .list-left{
+     display:flex;
+     flex-direction: row;
+ }
+
+ @media (min-width: 1000px){
+     .left-bar{
+        top:50vh;
+        left:10px;
+        width:50px;
+        position: fixed;
+     }
+
+     .list-left{
+         flex-direction: column;
+     }
+ } 
+
+ /*SECTION*/
+ .h1wel{
+     margin-top: 30px;
+     color:#b17302;
+     font-size:1.5rem;
+ }
+
+ .h2name{
+     color:#decece;
+     font-size: 5rem;
+ }
+
+ .h3creating{
+    color:#b17302;
+    font-size: 4rem;
+}
+
+.mydescription{
+    color:white;
+    margin-top:50px
+}
+
+.about-section{
+    margin-bottom: 100px;
+    color:#decece;
+}
+
+.Aboutme{
+    margin-top:15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #decece; 
+}
+
+.about-flex{
+    display:block;
+}
+
+.about-description {
+    
+}
+
+.about-photo{
+    width:50%;
+}
+
+.photo-profile{
+    width:250px;
+    height:250px;
+    border-radius: 100%;
+    margin-top:30px;
+    margin-left:40%;
+    opacity: 0.8;
+    transition: opacity .25s ease-in-out;
+}
+
+.photo-profile:hover{
+    opacity: 0.7;
+}
+
+@media (min-width: 768px){
+    .about-section{
+        margin-bottom: 150px;
+    }
+    .h1wel{
+        margin-top: 200px;
+        
+}
+
+.Aboutme{
+    margin-top:200px
+}
+
+.about-photo{
+    width:50%;
+}
+
+.about-flex{
+    display:flex;
+}
+
+.Aboutme{
+    font-size:40px;
+
+}
+
+}
+
+/*Project Section*/
+
+.projects-section{
+    margin-bottom: 40px;
+    visibility: hidden;
+    right:100px;
+    opacity:0.1;
+    position:relative;
+    
+    transition:transform 0.8s, visibility 0.8s, opacity 0.8s linear;
+
+}
+
+.animated{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(100px, -0px);
+}
+
+.projects-grid{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.list-grid{
+    width:100%;
+    background:#316d50;
+    margin: 5px;
+    min-height:200px;
+    justify-content: center;
+    padding:30px;
+    transition:transform 0.5s, linear;
+
+}
+
+.list-grid:hover{
+    transform: translate(0px, -6px);
+}
+
+.projects-title{
+color:white;
+font-size: 20px;
+font-weight: bold;
+}
+
+.top-grid{
+    display:flex;
+    justify-content: space-between;
+}
+
+.brow-top{
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .list-grid{
+        width:31%;
+    }
+
+    .projects-title{
+    font-size: 2rem;
+    color:white
+    }
+}
+
+/*FOOT SECTION*/
+
+.foot-section{
+    background:#014624;
+}
+
+.div-foot{
+    color:#b17302;
+    display:flex;
+    justify-content: center;
+    padding:30px;
+}
+
+.contact-element{
+    color:white;
+    display:inline-block;
+    font-size: 1.5rem;
+    padding:5px;
+    margin-bottom: 70px;
+    text-align: justify;
+}
+
+.contact-container{
+    display:flex;
+    justify-content: center;
+}
